@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FragmentTableHost</string>
+    <string name="text_discovery">发现</string>
+    <string name="text_red">联盟圈</string>
+    <string name="text_info">消息</string>
+    <string name="text_mine">我</string>
+    <string name="text_search">输入艺人名称及其他关键字</string>
+</resources>

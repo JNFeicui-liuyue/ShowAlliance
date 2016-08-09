@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.fragmenttablehost.MainActivity">
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/main_fragment_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/main_tab_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@color/colorYellow">-->
+
+            <!--<RadioButton-->
+               <!--android:id="@+id/main_tab_discovery"-->
+                <!--android:drawableTop="@drawable/main_discovery_selector"-->
+               <!--android:text="发现"-->
+                <!--style="@style/MainTabItem"-->
+                <!--android:textColor="@drawable/main_text_color_selector"/>-->
+
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/main_tab_alliance"-->
+                <!--android:drawableTop="@drawable/main_union_selsctor"-->
+                <!--android:text="联盟圈"-->
+                <!--style="@style/MainTabItem"-->
+                <!--android:textColor="@drawable/main_text_color_selector"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/main_tab_add"-->
+                <!--style="@style/MainTabItem"-->
+                <!--android:layout_height="64dp"-->
+                <!--android:drawableTop="@drawable/main_add_selector"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/main_tab_info"-->
+                <!--android:drawableTop="@drawable/main_info_selector"-->
+                <!--android:text="消息"-->
+                <!--style="@style/MainTabItem"-->
+                <!--android:textColor="@drawable/main_text_color_selector"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/main_tab_mine"-->
+                <!--android:drawableTop="@drawable/main_me_selector"-->
+                <!--android:text="我"-->
+                <!--style="@style/MainTabItem"-->
+                <!--android:textColor="@drawable/main_text_color_selector"/>-->
+        <!--</RadioGroup>-->
+
+         <!--  内容 底部-->
+        <LinearLayout
+            android:id="@+id/view_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#E6BC14"
+            android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorYellow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ll_home"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/main_discovery_selector"
+            android:id="@+id/bt_home" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_discovery"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_home" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/ll_information"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/main_union_selsctor"
+            android:id="@+id/bt_information" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_red"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_information" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/ll_forum"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/main_info_selector"
+            android:id="@+id/bt_forum" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_info"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_forum" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/ll_ourself"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/main_me_selector"
+            android:id="@+id/bt_ourself" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_mine"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_ourself" />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/view_bottom" />
+        <LinearLayout
+            android:id="@+id/main_help_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_add_selector"
+            android:id="@+id/help_img" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:text="@string/help_me"-->
+            <!--android:textSize="14sp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:id="@+id/help_txt" />-->
+
+    </LinearLayout>
+    </RelativeLayout>
+

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.fragmenttablehost.fragment.DiscoveryFragment">
+
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorYellow">
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_edittext"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imageView_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"/>
+
+    <EditText
+        android:hint="@string/text_search"
+        android:textColorHint="@color/colorWhite"
+        android:singleLine="true"
+        android:background="@drawable/corner_edittext"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_toLeftOf="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/searchstar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="     找艺人"/>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space1"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_toLeftOf="@+id/layout1"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/space1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/announce"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    接通告"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1">
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/recommendicon"
+                android:layout_toRightOf="@+id/space2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/recommendicon"/>
+
+            <ImageView
+                android:layout_toRightOf="@+id/recommendicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/recommend"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/allianceicon"
+                android:layout_toRightOf="@+id/space3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/allianceicon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_toRightOf="@+id/allianceicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/alliance"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.Space
+                android:id="@+id/space4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/showicon"
+                android:layout_toRightOf="@+id/space4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/showicon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_toRightOf="@+id/showicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/show"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>
